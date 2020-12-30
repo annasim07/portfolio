@@ -1,0 +1,36 @@
+.grid {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+
+    div {
+        flex-basis: calc(33.33333%-40px);
+    }
+}
+
+.card {
+    width: 18rem;
+    border: 1px solid gray;
+    margin: auto;
+    box-shadow: 'none';
+
+    .title {
+        margin-bottom: 1rem;
+    }
+
+    .body {
+        line-height: 1.5;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        margin-bottom: 4px;
+    }
+}
+
+.media {
+    width: 100%;
+    object-fit: cover;
+    background-position: top center;
+    overflow: hidden;
+}
