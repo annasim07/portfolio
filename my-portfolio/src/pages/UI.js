@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import { withRouter } from 'react-router-dom';
+
 import cachd from '../imgs/UI/cachd_web.gif';
 import leaderboards from '../imgs/UI/leaderboards-1.PNG';
 import irl from '../imgs/UI/irl.PNG';
@@ -54,4 +56,4 @@ class UI_UX extends Component {
     }
 }
 
-export default UI_UX;
+export default withRouter(UI_UX);

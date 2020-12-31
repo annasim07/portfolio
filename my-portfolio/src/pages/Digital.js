@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import { withRouter } from 'react-router-dom';
+
 import char_sheet from '../imgs/digital/character.png';
 import group from '../imgs/digital/kappa.JPG';
 import self from '../imgs/digital/me.JPG';
@@ -10,10 +12,6 @@ import ImageGallery from 'react-image-gallery';
 import '../styles/images.scss';
 
 const digital_array = [
-    {
-        original: char_sheet,
-        thumbnail: char_sheet,
-    },
     {
         original: flowers,
         thumbnail: flowers,
@@ -29,7 +27,11 @@ const digital_array = [
     {
         original: parents,
         thumbnail: parents
-    }
+    },
+    {
+        original: char_sheet,
+        thumbnail: char_sheet,
+    },
 ]
 
 class Digital extends Component {
@@ -44,4 +46,4 @@ class Digital extends Component {
     }
 }
 
-export default Digital;
+export default withRouter(Digital);

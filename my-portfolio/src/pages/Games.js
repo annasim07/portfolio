@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import { withRouter } from 'react-router-dom';
+
 import title from '../imgs/game/title.png';
 import cat from '../imgs/game/cat.png';
 import ice_boss from '../imgs/game/ice-boss.png';
@@ -49,4 +51,4 @@ class Games extends Component {
       }
 }
 
-export default Games;
+export default withRouter(Games);

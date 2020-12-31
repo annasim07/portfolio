@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
+
+import { withRouter } from 'react-router-dom';
+
 import disney from '../imgs/art/disney.png';
+import gouache from '../imgs/art/gouache.jpg';
 import clown from '../imgs/art/clown.jpg';
 import failure from '../imgs/art/failure.jpg';
 import etch from '../imgs/art/etch.jpg';
-import ghost from '../imgs/art/ghost.jpg';
 import ocean from '../imgs/art/ocean.jpg';
 import portrait from '../imgs/art/portrait.jpg';
-import reaper from '../imgs/art/reaper.jpg';
 import sfo from '../imgs/art/sfo.jpg';
 import sol from '../imgs/art/sliceoflife.jpg';
 import still_life from '../imgs/art/stilllife.jpg';
@@ -16,11 +18,8 @@ import '../styles/images.scss';
 
 const art_array = [
     {
-        id: 0,
-        original: portrait,
-        thumbnail: portrait,
-        originalAlt: "self portrait in acrylic",
-        sizes: "150"
+        original: gouache,
+        thumbnail: gouache,
     },
     {
         id: 1,
@@ -51,10 +50,6 @@ const art_array = [
         thumbnail: ocean
     },
     {
-        original: ghost,
-        thumbnail:ghost
-    },
-    {
         original: clown,
         thumbnail: clown,
     },
@@ -62,10 +57,6 @@ const art_array = [
         original: failure,
         thumbnail: failure,
     },
-    {
-        original: reaper,
-        thumbnail: reaper,
-    }
 ]
 
 class Art extends Component {
@@ -80,4 +71,4 @@ class Art extends Component {
       }
 }
 
-export default Art;
+export default withRouter(Art);

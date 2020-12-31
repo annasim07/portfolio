@@ -1,0 +1,24 @@
+.home {
+    margin-top: 2rem;
+}
+
+.MuiCard-root {
+    width: 15rem;
+    box-shadow: 'none';
+    &:hover {
+        box-shadow: 0 6px 12px 0 rgb(155, 155, 155);
+        transform: scale(1.1);
+        transition: .35s;
+    };
+}
+
+.MuiCardMedia-root {
+    height: 140px;
+}
+
+.media {
+    width: 100%;
+    object-fit: cover;
+    background-position: top center;
+}
+

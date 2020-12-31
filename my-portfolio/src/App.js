@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
-import About from './components/About';
+import { StylesProvider } from '@material-ui/core/styles';
+// import About from './components/About';
+import { Home } from './pages/Home';
 import Games from './pages/Games';
 import Art from './pages/Art';
 import Digital from './pages/Digital';
@@ -11,9 +13,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="container">
+    <StylesProvider injectFirst>
       <Router>
-        <Navbar className="nav" light expand="md">
+        <Navbar className="container" light expand="md">
           <NavbarBrand className="nav" href="/">Anna Sim</NavbarBrand>
             <Nav className="ml-auto" navbar>
               <NavItem>
@@ -28,21 +30,22 @@ function App() {
               <NavItem>
                 <NavLink href="/digital">Digital</NavLink>
               </NavItem>
+              {/* <NavItem>
+                <NavLink href="/about">About</NavLink>
+              </NavItem> */}
           </Nav>
         </Navbar>
 
         <Switch>
-          <Route exact path="/" component={About}/>
+          {/* <Route exact path="/about" component={About}/> */}
+          <Route exact path='/' component={Home} />
           <Route path="/digital" component={Digital}/>
           <Route path="/ui" component={UI_UX}/>
           <Route path="/games" component={Games}/>
           <Route path="/art" component={Art}/>
         </Switch>
       </Router>
-
-      <br />
-
-    </div>
+    </StylesProvider>
   );
 }
 

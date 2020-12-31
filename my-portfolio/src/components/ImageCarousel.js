@@ -1,6 +1,6 @@
 import React from 'react';
 import { UncontrolledCarousel } from 'reactstrap';
-import { ImageCard } from './ImageCard';
+
 import './components.scss';
 
 // const ImageCarousel = ({ data }) => {

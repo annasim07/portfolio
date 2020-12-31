@@ -8,8 +8,11 @@ import '../styles/about.scss';
 class About extends Component {
     render() {
         return(
-            <div>
-                <img className="myPhoto" src={me} alt="myself" />
+            <div className="container">
+                <Container fluid className="about">
+                    <img className="myPhoto" src={me} alt="myself" />
+                    <h3>Anna Sim</h3>
+                </Container>
             </div>
         )
     }

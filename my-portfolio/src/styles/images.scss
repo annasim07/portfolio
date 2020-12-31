@@ -1,10 +1,16 @@
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 $font: 'Poppins', sans-serif;
 
 .gallery {
     height: 100px;
 }
+
+.MuiTypography-root {
+    font-family: $font;
+    text-align: center;
+};
 
 h1 {
     text-align: center;

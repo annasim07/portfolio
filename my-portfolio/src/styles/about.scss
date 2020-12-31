@@ -1,7 +1,17 @@
 .myPhoto {
     height: 15rem;
-    border-radius: 50%;
+    border: 5px solid goldenrod;
+    box-shadow: 5rem;
     display: block;
     margin: 60px auto;
-    float: none;
+    float: left;
+}
+
+.about {
+    flex-direction: row;
+    align-items: flex-start;
+
+    h3 {
+        margin: 0px;
+    }
 }
