@@ -13,7 +13,6 @@ import {
 import gouache from '../imgs/art/gouache.jpg';
 import irl from '../imgs/UI/irl.PNG';
 import gameTitle from '../imgs/game/title.png';
-import me from '../imgs/digital/me.JPG';
 import group from '../imgs/digital/kappa.JPG';
 
 import './components.scss';

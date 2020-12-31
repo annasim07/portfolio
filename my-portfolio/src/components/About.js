@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Jumbotron, Container } from 'reactstrap';
+import { Container } from 'reactstrap';
 
 import me from '../imgs/me_cropped.png';
 

@@ -8,7 +8,6 @@ import clown from '../imgs/art/clown.jpg';
 import failure from '../imgs/art/failure.jpg';
 import etch from '../imgs/art/etch.jpg';
 import ocean from '../imgs/art/ocean.jpg';
-import portrait from '../imgs/art/portrait.jpg';
 import sfo from '../imgs/art/sfo.jpg';
 import sol from '../imgs/art/sliceoflife.jpg';
 import still_life from '../imgs/art/stilllife.jpg';
