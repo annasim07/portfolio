@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 import { StylesProvider } from '@material-ui/core/styles';
 // import About from './components/About';
@@ -19,16 +19,16 @@ function App() {
           <NavbarBrand className="nav" href="/">Anna Sim</NavbarBrand>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/ui">UI/UX</NavLink>
+                <NavLink tag={Link} to="/ui">UI/UX</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/games">Games</NavLink>
+                <NavLink tag={Link} to="/games">Games</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/art">Art</NavLink>
+                <NavLink tag={Link} to="/art">Art</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/digital">Digital</NavLink>
+                <NavLink tag={Link} to="/digital">Digital</NavLink>
               </NavItem>
               {/* <NavItem>
                 <NavLink href="/about">About</NavLink>
