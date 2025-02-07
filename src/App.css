@@ -1,0 +1,14 @@
+#root {
+  background-color: white;
+  font-family: "Poppins", "Alike", serif;
+}
+
+.navbar-link:hover {
+  /* color: #84A59D */
+  color: #d26765;
+}
+
+.navbar-link--active {
+  color: #F28482;
+  /* color: #84A59D; */
+}

@@ -1,0 +1,21 @@
+.background-image {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  background: center;
+  background-image: url("../../assets/background1.png");
+  opacity: 0.85;
+}
+
+.content {
+  z-index: 1;
+  height: 75vh;
+  gap: 24px;
+  text-align: left;
+
+  .my-picture {
+    max-width: 52vw;
+    border-radius: 50px;
+  }
+}
