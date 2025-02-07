@@ -5,6 +5,11 @@ import { HiOutlineCursorArrowRays } from "react-icons/hi2";
 import "./Travel.scss";
 
 export default function Travel() {
+  const variants = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { duration: 1, ease: "easeIn" } },
+  };
+
   return (
     <div className="wrapper flex flex-col justify-self-center gap-4">
       <motion.div
@@ -26,6 +31,9 @@ export default function Travel() {
           src={euImages.london.src}
           alt={euImages.london.alt}
           title={euImages.london.alt}
+          variants={variants}
+          initial="hidden"
+          animate="show"
         />
         <motion.img
           drag
@@ -34,6 +42,9 @@ export default function Travel() {
           src={otherTravel.puntaCana.src}
           alt={otherTravel.puntaCana.alt}
           title={otherTravel.puntaCana.alt}
+          variants={variants}
+          initial="hidden"
+          animate="show"
         />
         <HiOutlineCursorArrowRays className="cursor" />
       </motion.div>
@@ -56,6 +67,9 @@ export default function Travel() {
           src={euImages.croissant.src}
           alt={euImages.croissant.alt}
           title={euImages.croissant.alt}
+          variants={variants}
+          initial="hidden"
+          animate="show"
         />
         <motion.img
           drag
@@ -64,6 +78,9 @@ export default function Travel() {
           src={euImages.lisbon.src}
           alt={euImages.lisbon.alt}
           title={euImages.lisbon.alt}
+          variants={variants}
+          initial="hidden"
+          animate="show"
         />
 
         <motion.img
@@ -73,6 +90,9 @@ export default function Travel() {
           src={euImages.portugal.src}
           alt={euImages.portugal.alt}
           title={euImages.portugal.alt}
+          variants={variants}
+          initial="hidden"
+          animate="show"
         />
       </motion.div>
       <motion.div
@@ -94,6 +114,9 @@ export default function Travel() {
           src={euImages.eiffel.src}
           alt={euImages.eiffel.alt}
           title={euImages.eiffel.alt}
+          variants={variants}
+          initial="hidden"
+          animate="show"
         />
 
         <motion.img
@@ -103,6 +126,9 @@ export default function Travel() {
           src={euImages.venice.src}
           alt={euImages.venice.alt}
           title={euImages.venice.alt}
+          variants={variants}
+          initial="hidden"
+          animate="show"
         />
       </motion.div>
     </div>
