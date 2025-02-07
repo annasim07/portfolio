@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Image directory
-./src/assets
+src/assets
