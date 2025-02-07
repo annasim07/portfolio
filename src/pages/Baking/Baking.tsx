@@ -6,7 +6,7 @@ import { useState } from "react";
 import { MasonryImage } from "../../components"
 
 export default function Baking() {
-  const [hoveredIndex, setHoveredIndex] = useState<Number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div className="wrapper w-6xl grid grid-cols-2 md:grid-cols-3 gap-4 justify-self-center">

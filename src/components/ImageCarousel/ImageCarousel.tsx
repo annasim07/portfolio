@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ImageObject } from "../types";
+import { ImageObject } from "../../types";
 import { Button, Image } from "@heroui/react";
 import { HiChevronLeft, HiChevronRight, HiStar } from "react-icons/hi2";
 import clsx from "clsx";

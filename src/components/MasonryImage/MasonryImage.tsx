@@ -6,11 +6,11 @@ export const MasonryImage = ({
   setHoveredIndex,
   image,
 }: {
-  hoveredIndex: Number | null;
-  setHoveredIndex: (index: Number | null) => void;
+  hoveredIndex: number | null;
+  setHoveredIndex: (index: number | null) => void;
   image: ImageObject;
 }) => {
-  const itemIsHovered = (index: Number) => hoveredIndex === index;
+  const itemIsHovered = (index: number) => hoveredIndex === index;
 
   const divTransition = { ease: "easeInOut", duration: 0.5 };
   return (
